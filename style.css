@@ -1,0 +1,118 @@
+body{
+    margin:0;
+    font-family:"Segoe UI",sans-serif;
+    background:url("https://www.trekkingrinjani.com/mendakigunungrinjani/images/gunung-rinjani2.jpg") no-repeat center/cover;
+    min-height:100vh;
+}
+
+/* overlay */
+.overlay{
+    background:rgba(0,0,0,0.55);
+    min-height:100vh;
+    color:white;
+}
+
+/* ===== LOGIN ===== */
+.login-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.login-box{
+    background:white;
+    color:#333;
+    padding:30px;
+    width:320px;
+    border-radius:15px;
+    text-align:center;
+}
+.login-box h2{color:#2e7d32;}
+.login-box input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+}
+.login-box button{
+    width:100%;
+    padding:10px;
+    border:none;
+    background:#2e7d32;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+.error{color:red;font-size:14px}
+
+/* ===== DASHBOARD ===== */
+.dashboard{
+    display:none;
+    padding:20px;
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logout{
+    background:#c62828;
+    border:none;
+    padding:8px 14px;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* ===== OPTIONS ===== */
+.options{
+    margin-top:30px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+.card{
+    background:white;
+    color:#333;
+    border-radius:15px;
+    overflow:hidden;
+    cursor:pointer;
+}
+.card img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+}
+.card .content{padding:15px}
+.card h3{color:#2e7d32}
+
+/* ===== POPUP ===== */
+.popup{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.6);
+    justify-content:center;
+    align-items:center;
+}
+.popup-box{
+    background:white;
+    color:#333;
+    padding:25px;
+    max-width:420px;
+    border-radius:15px;
+    text-align:center;
+}
+.popup-box button{
+    margin:8px;
+    padding:8px 14px;
+    border:none;
+    border-radius:8px;
+    background:#2e7d32;
+    color:white;
+    cursor:pointer;
+}
+.popup-box input{
+    width:100%;
+    padding:8px;
+    margin:8px 0;
+}
